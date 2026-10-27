@@ -83,6 +83,13 @@ img { max-width: 100%; display: block; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 .checks { display: flex; flex-wrap: wrap; gap: 20px; color: var(--muted); font-size: 14px; }
 .checks span { display: flex; align-items: center; gap: 6px; }
+[hidden] { display: none !important; }
+.live-stats { width: fit-content; max-width: 100%; display: inline-flex; align-items: center; gap: 10px; margin: 20px 0 0; padding: 8px 16px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.live-stats b { color: var(--text); font-weight: 700; }
+.live-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: #39ff88; box-shadow: 0 0 8px #39ff88; }
+.live-stats-center { margin: 0 0 22px; }
+.cta-center { justify-content: center; }
+.install-box .live-stats { font-size: 14px; color: var(--muted); max-width: none; line-height: 1.4; }
 
 .hero-visual {
   flex: 1 1 360px; position: relative; padding: 36px 28px;
