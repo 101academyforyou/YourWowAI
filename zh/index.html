@@ -194,6 +194,25 @@
         <p>作品馬上出現在大家的動態上。有人按 Cool、留言或追蹤你，都會即時通知你 ⚡</p>
       </div>
     </div>
+
+    <div class="ai-hook">
+      <div class="ai-hook-head">
+        <span class="icon-box" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"></rect><path d="M12 3v4"></path><circle cx="12" cy="3" r="1"></circle><path d="M9.5 12h.01M14.5 12h.01"></path><path d="M9.5 15.5h5"></path><path d="M2 12h3M19 12h3"></path></svg></span>
+        <h3>或者，交給 AI 幫你分享</h3>
+      </div>
+      <p>到 <strong>編輯個人檔案 → AI Webhook</strong> 產生專屬網址，按 <strong>複製給 AI 的指示</strong>，貼給 Claude Code、ChatGPT 或任何自動化工具，例如：</p>
+      <pre class="code-block"><code>請幫我把這個作品分享到 YourWowAI。先用 GET 讀取 YOUR_WEBHOOK_URL 的使用說明，再用 POST 把作品以 JSON 送到同一個網址：工具名稱、介紹、YouTube 示範影片連結或截圖、試用連結、GitHub 專案、用到的 AI 工具和分類。</code></pre>
+      <p>習慣用指令列，或想接 GitHub Actions 之類的自動化？一個請求就搞定：</p>
+      <pre class="code-block code-scroll"><code>curl https://yourwowai.onepointzeroone.org/api/hooks/YOUR_WEBHOOK_TOKEN \
+  -F 'title=AI 收據記帳' \
+  -F 'description=拍下收據，自動幫你分類記帳。' \
+  -F 'toolUrl=https://example.com' \
+  -F 'githubUrl=you/receipt-tracker' \
+  -F 'aiTools=Claude Code' \
+  -F 'categories=finance,productivity' \
+  -F 'media=@screenshot.png'</code></pre>
+      <p class="ai-hook-note">🔒 拿到 Webhook 網址的人都能用你的帳號發文，請不要公開；外流時到「編輯個人檔案」重新產生。每小時最多 20 則。</p>
+    </div>
   </div>
 </section>
 

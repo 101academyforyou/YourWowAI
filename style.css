@@ -235,3 +235,18 @@ img { max-width: 100%; display: block; }
 .doc details[open] summary { color: var(--accent); }
 .doc details[open] summary::before { transform: rotate(45deg); }
 .doc details p { margin: 0 0 16px; }
+
+/* 「交給 AI 幫你分享」：AI Webhook 範例 */
+.ai-hook { margin-top: 28px; padding: 28px; border-radius: 24px; background: var(--surface); border: 1px solid var(--border); display: flex; flex-direction: column; gap: 14px; }
+.ai-hook-head { display: flex; align-items: center; gap: 12px; }
+.ai-hook h3 { margin: 0; }
+.ai-hook p { margin: 0; color: var(--body); }
+.ai-hook-note { font-size: 14px; color: var(--muted) !important; }
+.code-block { margin: 0; padding: 16px 18px; border-radius: 14px; background: #04070f; border: 1px solid var(--border); overflow-x: auto; }
+.code-block code { font-family: var(--mono); font-size: 13px; line-height: 1.7; color: var(--text); white-space: pre-wrap; word-break: break-word; }
+.code-scroll code { white-space: pre; word-break: normal; }
+@media (max-width: 520px) {
+  .ai-hook { padding: 20px 16px; }
+  .code-block { padding: 14px; }
+  .code-block code { font-size: 12px; }
+}
