@@ -250,3 +250,6 @@ img { max-width: 100%; display: block; }
   .code-block { padding: 14px; }
   .code-block code { font-size: 12px; }
 }
+
+/* 文字裡的星星：沒有顏色，跟著文字顏色 */
+.inline-star { width: 1em; height: 1em; vertical-align: -0.14em; }
