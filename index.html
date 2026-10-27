@@ -185,6 +185,25 @@
         <p>Your post goes live right away. You'll get notified when people vote, comment or follow you ⚡</p>
       </div>
     </div>
+
+    <div class="ai-hook">
+      <div class="ai-hook-head">
+        <span class="icon-box" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="3"></rect><path d="M12 3v4"></path><circle cx="12" cy="3" r="1"></circle><path d="M9.5 12h.01M14.5 12h.01"></path><path d="M9.5 15.5h5"></path><path d="M2 12h3M19 12h3"></path></svg></span>
+        <h3>Or let your AI share it for you</h3>
+      </div>
+      <p>In <strong>Edit profile → AI Webhook</strong>, create your private URL and tap <strong>Copy AI prompt</strong>. Paste it into Claude Code, ChatGPT or any automation tool, for example:</p>
+      <pre class="code-block"><code>Please share this project on YourWowAI for me. First GET YOUR_WEBHOOK_URL to read the instructions, then POST the project as JSON to the same URL: title, description, a YouTube demo link or screenshots, a link to try it, the GitHub repo, the AI tools used and categories.</code></pre>
+      <p>Prefer the command line or an automation like GitHub Actions? One request is enough:</p>
+      <pre class="code-block code-scroll"><code>curl https://yourwowai.onepointzeroone.org/api/hooks/YOUR_WEBHOOK_TOKEN \
+  -F 'title=AI Receipt Tracker' \
+  -F 'description=Snap a receipt and it sorts your spending.' \
+  -F 'toolUrl=https://example.com' \
+  -F 'githubUrl=you/receipt-tracker' \
+  -F 'aiTools=Claude Code' \
+  -F 'categories=finance,productivity' \
+  -F 'media=@screenshot.png'</code></pre>
+      <p class="ai-hook-note">🔒 Anyone with your webhook URL can post as you. Keep it private, and regenerate it in Edit profile if it leaks. Up to 20 posts per hour.</p>
+    </div>
   </div>
 </section>
 
