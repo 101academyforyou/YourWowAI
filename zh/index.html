@@ -93,7 +93,7 @@
       <div class="card">
         <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.2"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
         <h3>一張圖，就說清楚</h3>
-        <p>每則分享都附上截圖或 YouTube 示範影片，截圖最多 10 張，左右滑或點箭頭切換，影片直接在貼文裡播放。你的作品長什麼樣子，大家一眼就懂。</p>
+        <p>每則分享都附上截圖或 YouTube 示範影片，截圖最多 10 張，左右滑或點箭頭切換，影片直接在貼文裡播放。你的作品長什麼樣子，大家一眼就懂；按 <strong>Try it</strong> 馬上試用，按 <strong>Learn it</strong> 看你是怎麼做出來的。</p>
       </div>
       <div class="card">
         <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></div>
@@ -187,7 +187,7 @@
       <div class="card step">
         <span class="step-num">2</span>
         <h3>寫一句介紹，選個領域</h3>
-        <p>工具叫什麼、哪裡可以試用，簡單幾句就好；放在 GitHub 上的作品，從清單挑一下就自動填好。點選用到的 AI 工具，再選最多 3 個應用領域，讓對的人找到它。</p>
+        <p>工具叫什麼、哪裡可以試用，簡單幾句就好；寫過製作教學的話，也可以附上教學連結；放在 GitHub 上的作品，從清單挑一下就自動填好。點選用到的 AI 工具，再選最多 3 個應用領域，讓對的人找到它。</p>
       </div>
       <div class="card step">
         <span class="step-num">3</span>
@@ -202,7 +202,7 @@
         <h3>或者，交給 AI 幫你分享</h3>
       </div>
       <p>到 <strong>編輯個人檔案 → AI Webhook</strong> 產生專屬網址，按 <strong>複製給 AI 的指示</strong>，貼給 Claude Code、ChatGPT 或任何自動化工具，例如：</p>
-      <pre class="code-block"><code>請幫我把這個作品分享到 YourWowAI。先用 GET 讀取 YOUR_WEBHOOK_URL 的使用說明，再用 POST 把作品以 JSON 送到同一個網址：工具名稱、介紹、YouTube 示範影片連結或截圖、試用連結、GitHub 專案、用到的 AI 工具和分類。</code></pre>
+      <pre class="code-block"><code>請幫我把這個作品分享到 YourWowAI。先用 GET 讀取 YOUR_WEBHOOK_URL 的使用說明，再用 POST 把作品以 JSON 送到同一個網址：工具名稱、介紹、YouTube 示範影片連結或截圖、試用連結、教學連結、GitHub 專案、用到的 AI 工具和分類。</code></pre>
       <p>習慣用指令列，或想接 GitHub Actions 之類的自動化？一個請求就搞定：</p>
       <pre class="code-block code-scroll"><code>curl https://yourwowai.onepointzeroone.org/api/hooks/YOUR_WEBHOOK_TOKEN \
   -F 'title=AI 收據記帳' \

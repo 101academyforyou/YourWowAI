@@ -86,7 +86,7 @@
       <div class="card">
         <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"></rect><circle cx="12" cy="12" r="3.2"></circle><path d="M8 5l1.5-2h5L16 5"></path></svg></div>
         <h3>Show, don't tell</h3>
-        <p>Every post needs a screenshot or a YouTube demo. Swipe or tap through up to 10 screenshots, and demos play right in the post. People get what your tool does at a glance.</p>
+        <p>Every post needs a screenshot or a YouTube demo. Swipe or tap through up to 10 screenshots, and demos play right in the post. People get what your tool does at a glance, tap <strong>Try it</strong> to use it, and <strong>Learn it</strong> to see how you built it.</p>
       </div>
       <div class="card">
         <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></div>
@@ -178,7 +178,7 @@
       <div class="card step">
         <span class="step-num">2</span>
         <h3>Pick your GitHub repo and a category</h3>
-        <p>Choose from your repos or paste a link, and we fill in the name, description, website and AI tools. Tap the AI tools you used and choose up to 3 categories so the right people find it.</p>
+        <p>Choose from your repos or paste a link, and we fill in the name, description, website and AI tools. Add a tutorial link if you wrote up how you built it. Tap the AI tools you used and choose up to 3 categories so the right people find it.</p>
       </div>
       <div class="card step">
         <span class="step-num">3</span>
@@ -193,7 +193,7 @@
         <h3>Or let your AI share it for you</h3>
       </div>
       <p>In <strong>Edit profile → AI Webhook</strong>, create your private URL and tap <strong>Copy AI prompt</strong>. Paste it into Claude Code, ChatGPT or any automation tool, for example:</p>
-      <pre class="code-block"><code>Please share this project on YourWowAI for me. First GET YOUR_WEBHOOK_URL to read the instructions, then POST the project as JSON to the same URL: title, description, a YouTube demo link or screenshots, a link to try it, the GitHub repo, the AI tools used and categories.</code></pre>
+      <pre class="code-block"><code>Please share this project on YourWowAI for me. First GET YOUR_WEBHOOK_URL to read the instructions, then POST the project as JSON to the same URL: title, description, a YouTube demo link or screenshots, a link to try it, a tutorial link, the GitHub repo, the AI tools used and categories.</code></pre>
       <p>Prefer the command line or an automation like GitHub Actions? One request is enough:</p>
       <pre class="code-block code-scroll"><code>curl https://yourwowai.onepointzeroone.org/api/hooks/YOUR_WEBHOOK_TOKEN \
   -F 'title=AI Receipt Tracker' \
